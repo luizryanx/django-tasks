@@ -7,24 +7,32 @@
         <table class="table">
             <thead>
                 <tr>
+                    <th scope="col">Id</th>
                     <th scope="col">Titulo</th>
                     <th scope="col">Status</th>
                     <th scope="col">Descriçao</th>
                     <th scope="col">Data de Criaçao</th>
                     <th scope="col">Data de Finalizaçao</th>
+                    <th scope="col">Ações</th>
                 </tr>
             </thead>
             <tbody>
                 {% for  tasks in  tasks%}
                     <tr>                    
+                        <td>{{tasks.pk}}</td>
                         <td>{{tasks.title}}</td>
                         <td>{{tasks.status}}</td>
                         <td>{{tasks.description}}</td>
                         <td>{{tasks.created_at}}</td>
                         <td>{{tasks.due_date}}</td>
+                        <td>
+
+                            <a href="{% url 'tasks_edit' pk=tasks.pk %}" class="btn btn-primary btn-sm">Editar</a>
+                            <a href="#" class="btn btn-danger btn-sm">Excluir</a>
+
+                        </td>
                     </tr>
                 {% endfor %}
             </tbody>
-        </table>
-    
+        </table>   
 {% endblock %}>

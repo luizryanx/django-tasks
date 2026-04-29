@@ -1,0 +1,13 @@
+{% extends "tasks/base.html" %}
+
+{% block  content %}
+
+    <h1> Editar Tarefa </h1>
+
+    <form method = "post" class = "form">
+        {% csrf_token %}
+        {{form.as_p}}
+        <button type = "submit" class = "btn btn-primary">Salvar Alterações</button>
+    </form>
+    <a href = "{% url "tasks_list" %}"> Lista de Tarefas </a>
+{% endblock content %}

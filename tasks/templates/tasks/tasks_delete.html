@@ -1,0 +1,13 @@
+{% extends "tasks/base.html" %}
+
+{% block content %}
+
+    <h1> Confirmar Exclução </h1>
+    <p> Deseja excluir {{object.title}}? </p>
+
+    <form method = "post">
+        {% csrf_token %}
+        <button type = "submit" class = "btn btn-danger"> Excluir </button>
+    </form>
+    <a href="{% url "tasks_list" %}"> Lista de Tarefas</a>
+{% endblock content %}

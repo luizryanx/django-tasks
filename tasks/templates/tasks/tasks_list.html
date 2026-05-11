@@ -4,6 +4,19 @@
     
         <h1>Lista de Atividades</h1>
 
+        <form method="get" action="{% url "tasks_list" %}">
+            <label for="status">Status: </label>
+            <select name="status" id="status">
+                <option value="">Todos</option>
+                <option value="P">Pendente</option>
+                <option value="A">Em andamento</option>
+                <option value="C">Concluido</option> 
+
+            </select>
+            <button type="submit">Filtrar</button>   
+        </form>
+                       
+
         <table class="table">
             <thead>
                 <tr>

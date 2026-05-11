@@ -13,6 +13,13 @@ class TasksListView(ListView):
     model = Tasks
     template_name = "tasks/tasks_list.html"
     context_object_name = "tasks"
+    def get_queryset(self):
+        queryset = super().get_queryset()
+        status = self.request.GET.get('status')
+
+        if status:
+            queryset = queryset.filter(status=status)
+        return queryset
 
 class TasksUpdateView(UpdateView):
     model = Tasks

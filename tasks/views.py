@@ -4,11 +4,14 @@ from django.views.generic.edit import UpdateView, CreateView
 from .models import Tasks
 from .forms import TasksForm, TasksFormCreate
 from django.urls import reverse_lazy
+from django.contrib.auth.decorators import login_required
+from django.utils.decorators import method_decorator
 
 # def tasks_list(request):
 #     tasks = Tasks.objects.all()
 #     return render(request, "tasks/tasks_list.html", {"tasks": tasks})
 
+@method_decorator(login_required, name='dispatch')
 class TasksListView(ListView):
     model = Tasks
     template_name = "tasks/tasks_list.html"

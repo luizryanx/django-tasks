@@ -122,7 +122,7 @@ STATIC_URL = 'static/'
 
 LOGIN_REDIRECT_URL = "tasks_list"
 LOGIN_URL = "login"
-LOGOUT_REDIRECT_URL = "login"
+LOGOUT_URL = "logout"
 
 
 # Default primary key field type

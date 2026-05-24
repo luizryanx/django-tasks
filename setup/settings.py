@@ -120,6 +120,10 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 
+STATICFILES_DIRS = [
+    BASE_DIR / "tasks/static",
+]
+
 LOGIN_REDIRECT_URL = "tasks_list"
 LOGIN_URL = "login"
 LOGOUT_URL = "logout"

@@ -1,0 +1,1468 @@
+/* =========================
+   TEMA ABYSS + FROST
+========================= */
+
+:root{
+    --abyss: #0b1120;
+    --abyss-light: #131c31;
+
+    --frost: #8ecae6;
+    --frost-strong: #5dade2;
+
+    --text: #e2e8f0;
+
+    --border: #24324d;
+
+    --hover: #1b2842;
+}
+
+/* =========================
+   BODY
+========================= */
+
+body{
+    background: linear-gradient(
+        135deg,
+        var(--abyss),
+        #111827
+    ) !important;
+
+    color: var(--text) !important;
+
+    min-height: 100vh;
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar{
+    background: rgba(11,17,32,0.95) !important;
+
+    backdrop-filter: blur(10px);
+
+    border-bottom: 1px solid var(--border);
+
+    padding: 18px 30px;
+
+    box-shadow: 0 4px 20px rgba(0,0,0,0.35);
+}
+
+/* =========================
+   LOGO
+========================= */
+
+.navbar-brand{
+    color: var(--frost) !important;
+
+    font-size: 26px;
+
+    font-weight: bold;
+
+    letter-spacing: 1px;
+
+    transition: 0.3s;
+}
+
+.navbar-brand:hover{
+    color: #d6f0ff !important;
+
+    transform: scale(1.03);
+}
+
+/* =========================
+   LINKS
+========================= */
+
+.nav-link{
+    color: var(--text) !important;
+
+    font-weight: 500;
+
+    margin-left: 10px;
+
+    transition: 0.25s;
+}
+
+.nav-link:hover{
+    color: var(--frost) !important;
+
+    transform: translateY(-2px);
+}
+
+/* =========================
+   CONTAINER
+========================= */
+
+main.container{
+    margin-top: 40px;
+}
+
+/* =========================
+   CARDS
+========================= */
+
+.card{
+    background: rgba(19,28,49,0.9) !important;
+
+    border: 1px solid var(--border) !important;
+
+    border-radius: 22px !important;
+
+    padding: 24px;
+
+    margin-bottom: 25px;
+
+    color: var(--text) !important;
+
+    box-shadow:
+        0 8px 25px rgba(0,0,0,0.35);
+
+    transition: 0.3s;
+}
+
+.card:hover{
+    transform: translateY(-4px);
+
+    border-color: var(--frost);
+}
+
+/* =========================
+   BOTÕES
+========================= */
+
+button,
+.btn{
+    background: linear-gradient(
+        135deg,
+        var(--frost),
+        var(--frost-strong)
+    ) !important;
+
+    color: #081018 !important;
+
+    border: none !important;
+
+    border-radius: 13px !important;
+
+    padding: 10px 20px !important;
+
+    font-weight: bold !important;
+
+    transition: 0.25s;
+}
+
+button:hover,
+.btn:hover{
+    transform: translateY(-2px);
+
+    opacity: 0.92;
+}
+
+/* =========================
+   INPUTS
+========================= */
+
+input,
+textarea,
+select{
+    background-color: var(--abyss-light) !important;
+
+    color: var(--text) !important;
+
+    border: 1px solid var(--border) !important;
+
+    border-radius: 14px !important;
+
+    padding: 12px !important;
+
+    transition: 0.25s;
+}
+
+input:focus,
+textarea:focus,
+select:focus{
+    border-color: var(--frost) !important;
+
+    box-shadow:
+        0 0 0 0.2rem rgba(142,202,230,0.2) !important;
+}
+
+/* =========================
+   TABELAS
+========================= */
+
+.table{
+    background: rgba(19,28,49,0.95) !important;
+
+    color: var(--text) !important;
+
+    border-radius: 18px;
+
+    overflow: hidden;
+}
+
+.table thead{
+    background-color: #0f172a !important;
+}
+
+.table th{
+    color: var(--frost) !important;
+
+    font-size: 15px;
+
+    letter-spacing: 0.5px;
+
+    border-color: var(--border) !important;
+}
+
+.table td{
+    color: var(--text) !important;
+
+    vertical-align: middle;
+
+    border-color: var(--border) !important;
+}
+
+.table tbody tr{
+    transition: 0.2s;
+}
+
+.table tbody tr:hover{
+    background-color: var(--hover) !important;
+}
+
+/* =========================
+   ALERTAS
+========================= */
+
+.alert{
+    border: none !important;
+
+    border-radius: 16px !important;
+}
+
+/* =========================
+   SCROLLBAR
+========================= */
+
+::-webkit-scrollbar{
+    width: 10px;
+}
+
+::-webkit-scrollbar-track{
+    background: var(--abyss);
+}
+
+::-webkit-scrollbar-thumb{
+    background: var(--frost-strong);
+
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background: var(--frost);
+}
+
+/* =========================
+   RESPONSIVO
+========================= */
+
+@media(max-width:768px){
+
+    .navbar{
+        padding: 15px;
+    }
+
+    .navbar-brand{
+        font-size: 22px;
+    }
+
+    .card{
+        padding: 18px;
+    }
+
+    .table{
+        font-size: 14px;
+    }
+}
+
+
+
+/* =========================
+   TASK CREATE
+   ABYSS + FROST
+========================= */
+
+/* TÍTULO */
+
+h1{
+    color: #8ecae6;
+
+    font-size: 42px;
+
+    font-weight: 700;
+
+    margin-bottom: 30px;
+
+    letter-spacing: 1px;
+
+    text-shadow: 0 0 12px rgba(142,202,230,0.15);
+}
+
+/* FORM */
+
+.form{
+    background: rgba(19,28,49,0.92);
+
+    border: 1px solid #24324d;
+
+    border-radius: 24px;
+
+    padding: 35px;
+
+    max-width: 750px;
+
+    box-shadow:
+        0 10px 30px rgba(0,0,0,0.4);
+
+    backdrop-filter: blur(10px);
+
+    animation: fadeUp 0.45s ease;
+}
+
+/* PARÁGRAFOS DO DJANGO */
+
+.form p{
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 10px;
+
+    margin-bottom: 24px;
+}
+
+/* LABELS */
+
+.form label{
+    color: #cbd5e1;
+
+    font-size: 15px;
+
+    font-weight: 600;
+
+    letter-spacing: 0.4px;
+}
+
+/* INPUTS */
+
+.form input,
+.form textarea,
+.form select{
+    background-color: #111827 !important;
+
+    border: 1px solid #24324d !important;
+
+    border-radius: 16px !important;
+
+    padding: 14px 18px !important;
+
+    color: #f1f5f9 !important;
+
+    font-size: 15px;
+
+    transition: 0.25s;
+}
+
+/* TEXTAREA */
+
+.form textarea{
+    min-height: 140px;
+
+    resize: vertical;
+}
+
+/* FOCUS */
+
+.form input:focus,
+.form textarea:focus,
+.form select:focus{
+    border-color: #8ecae6 !important;
+
+    box-shadow:
+        0 0 0 0.2rem rgba(142,202,230,0.18) !important;
+
+    transform: translateY(-1px);
+}
+
+/* PLACEHOLDER */
+
+.form input::placeholder,
+.form textarea::placeholder{
+    color: #64748b;
+}
+
+/* BOTÃO */
+
+.btn-primary{
+    background: linear-gradient(
+        135deg,
+        #8ecae6,
+        #5dade2
+    ) !important;
+
+    border: none !important;
+
+    border-radius: 16px !important;
+
+    padding: 12px 24px !important;
+
+    color: #081018 !important;
+
+    font-weight: 700 !important;
+
+    letter-spacing: 0.5px;
+
+    transition: 0.25s;
+
+    box-shadow:
+        0 6px 18px rgba(142,202,230,0.25);
+}
+
+/* HOVER BOTÃO */
+
+.btn-primary:hover{
+    transform: translateY(-3px);
+
+    opacity: 0.95;
+
+    box-shadow:
+        0 10px 24px rgba(142,202,230,0.35);
+}
+
+/* LINK CANCELAR */
+
+a{
+    display: inline-block;
+
+    margin-top: 18px;
+
+    color: #8ecae6;
+
+    text-decoration: none;
+
+    font-weight: 600;
+
+    transition: 0.2s;
+}
+
+a:hover{
+    color: #d6f0ff;
+
+    transform: translateX(3px);
+}
+
+/* ANIMAÇÃO */
+
+@keyframes fadeUp{
+
+    from{
+        opacity: 0;
+
+        transform: translateY(20px);
+    }
+
+    to{
+        opacity: 1;
+
+        transform: translateY(0);
+    }
+}
+
+/* RESPONSIVO */
+
+@media(max-width:768px){
+
+    h1{
+        font-size: 32px;
+    }
+
+    .form{
+        padding: 25px;
+    }
+
+    .btn-primary{
+        width: 100%;
+    }
+}
+
+
+/* =========================
+   TASKS LIST
+   ABYSS + FROST
+========================= */
+
+/* TÍTULO */
+
+h1{
+    color: #8ecae6;
+
+    font-size: 42px;
+
+    font-weight: 700;
+
+    margin-bottom: 30px;
+
+    letter-spacing: 1px;
+
+    text-shadow:
+        0 0 12px rgba(142,202,230,0.15);
+}
+
+/* =========================
+   FILTRO
+========================= */
+
+form{
+    display: flex;
+
+    align-items: center;
+
+    gap: 16px;
+
+    flex-wrap: wrap;
+
+    margin-bottom: 30px;
+
+    background: rgba(19,28,49,0.92);
+
+    border: 1px solid #24324d;
+
+    border-radius: 22px;
+
+    padding: 20px;
+
+    box-shadow:
+        0 8px 25px rgba(0,0,0,0.35);
+
+    backdrop-filter: blur(10px);
+}
+
+/* LABEL */
+
+form label{
+    color: #cbd5e1;
+
+    font-weight: 600;
+
+    font-size: 15px;
+}
+
+/* SELECT */
+
+form select{
+    background-color: #111827 !important;
+
+    border: 1px solid #24324d !important;
+
+    border-radius: 14px !important;
+
+    padding: 10px 16px !important;
+
+    color: #f1f5f9 !important;
+
+    min-width: 180px;
+
+    transition: 0.25s;
+}
+
+/* SELECT FOCUS */
+
+form select:focus{
+    border-color: #8ecae6 !important;
+
+    box-shadow:
+        0 0 0 0.2rem rgba(142,202,230,0.18) !important;
+}
+
+/* BOTÃO FILTRAR */
+
+form button{
+    background: linear-gradient(
+        135deg,
+        #8ecae6,
+        #5dade2
+    ) !important;
+
+    color: #081018 !important;
+
+    border: none !important;
+
+    border-radius: 14px !important;
+
+    padding: 10px 20px !important;
+
+    font-weight: 700;
+
+    transition: 0.25s;
+
+    box-shadow:
+        0 6px 18px rgba(142,202,230,0.25);
+}
+
+form button:hover{
+    transform: translateY(-2px);
+
+    opacity: 0.95;
+}
+
+/* =========================
+   TABELA
+========================= */
+
+.table{
+    overflow: hidden;
+
+    border-radius: 24px;
+
+    background:
+        rgba(19,28,49,0.95) !important;
+
+    border: 1px solid #24324d;
+
+    box-shadow:
+        0 10px 30px rgba(0,0,0,0.35);
+}
+
+/* CABEÇALHO */
+
+.table thead{
+    background:
+        linear-gradient(
+            135deg,
+            #0f172a,
+            #111827
+        ) !important;
+}
+
+.table th{
+    color: #8ecae6 !important;
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+    letter-spacing: 0.5px;
+
+    padding: 18px !important;
+
+    border-color: #24324d !important;
+
+    text-transform: uppercase;
+}
+
+/* CELULAS */
+
+.table td{
+    color: #f1f5f9 !important;
+
+    padding: 18px !important;
+
+    vertical-align: middle;
+
+    border-color: #24324d !important;
+
+    font-size: 14px;
+}
+
+/* LINHAS */
+
+.table tbody tr{
+    transition: 0.2s;
+}
+
+.table tbody tr:hover{
+    background-color: #1b2842 !important;
+
+    transform: scale(1.002);
+}
+
+/* =========================
+   BADGES STATUS
+========================= */
+
+.badge{
+    padding: 8px 12px !important;
+
+    border-radius: 999px !important;
+
+    font-size: 12px !important;
+
+    font-weight: bold !important;
+
+    letter-spacing: 0.5px;
+
+    box-shadow:
+        0 4px 10px rgba(0,0,0,0.2);
+}
+
+/* =========================
+   BOTÕES DE AÇÃO
+========================= */
+
+.btn-sm{
+    border-radius: 12px !important;
+
+    padding: 8px 14px !important;
+
+    font-weight: 600 !important;
+
+    transition: 0.25s;
+
+    border: none !important;
+}
+
+/* EDITAR */
+
+.btn-primary{
+    background:
+        linear-gradient(
+            135deg,
+            #8ecae6,
+            #5dade2
+        ) !important;
+
+    color: #081018 !important;
+
+    box-shadow:
+        0 6px 18px rgba(142,202,230,0.2);
+}
+
+/* EXCLUIR */
+
+.btn-danger{
+    background:
+        linear-gradient(
+            135deg,
+            #ef4444,
+            #dc2626
+        ) !important;
+
+    box-shadow:
+        0 6px 18px rgba(239,68,68,0.2);
+}
+
+/* HOVER BOTÕES */
+
+.btn-sm:hover{
+    transform: translateY(-2px);
+
+    opacity: 0.95;
+}
+
+/* =========================
+   RESPONSIVO
+========================= */
+
+@media(max-width:992px){
+
+    .table{
+        display: block;
+
+        overflow-x: auto;
+    }
+}
+
+@media(max-width:768px){
+
+    h1{
+        font-size: 32px;
+    }
+
+    form{
+        flex-direction: column;
+
+        align-items: stretch;
+    }
+
+    form button{
+        width: 100%;
+    }
+
+    .table th,
+    .table td{
+        padding: 14px !important;
+    }
+}
+
+
+/* =========================
+   TASK DELETE
+   ABYSS + FROST
+========================= */
+
+/* TÍTULO */
+
+h1{
+    color: #ef4444;
+
+    font-size: 42px;
+
+    font-weight: 700;
+
+    margin-bottom: 20px;
+
+    letter-spacing: 1px;
+
+    text-shadow:
+        0 0 14px rgba(239,68,68,0.18);
+}
+
+/* TEXTO */
+
+p{
+    color: #cbd5e1;
+
+    font-size: 18px;
+
+    margin-bottom: 35px;
+
+    line-height: 1.7;
+}
+
+/* NOME DA TAREFA */
+
+p strong{
+    color: #8ecae6;
+}
+
+/* FORM CARD */
+
+form{
+    background:
+        rgba(19,28,49,0.94);
+
+    border: 1px solid #24324d;
+
+    border-radius: 28px;
+
+    padding: 35px;
+
+    max-width: 650px;
+
+    box-shadow:
+        0 10px 35px rgba(0,0,0,0.4);
+
+    backdrop-filter: blur(10px);
+
+    animation: fadeUp 0.45s ease;
+}
+
+/* BOTÃO EXCLUIR */
+
+.btn-danger{
+    background:
+        linear-gradient(
+            135deg,
+            #ef4444,
+            #dc2626
+        ) !important;
+
+    border: none !important;
+
+    border-radius: 16px !important;
+
+    padding: 13px 24px !important;
+
+    color: white !important;
+
+    font-weight: 700 !important;
+
+    letter-spacing: 0.5px;
+
+    transition: 0.25s;
+
+    box-shadow:
+        0 8px 22px rgba(239,68,68,0.25);
+}
+
+/* HOVER BOTÃO */
+
+.btn-danger:hover{
+    transform: translateY(-3px);
+
+    opacity: 0.95;
+
+    box-shadow:
+        0 12px 28px rgba(239,68,68,0.35);
+}
+
+/* LINK */
+
+a{
+    display: inline-block;
+
+    margin-top: 22px;
+
+    color: #8ecae6;
+
+    text-decoration: none;
+
+    font-weight: 600;
+
+    transition: 0.25s;
+}
+
+/* HOVER LINK */
+
+a:hover{
+    color: #d6f0ff;
+
+    transform: translateX(3px);
+}
+
+/* ANIMAÇÃO */
+
+@keyframes fadeUp{
+
+    from{
+        opacity: 0;
+
+        transform: translateY(20px);
+    }
+
+    to{
+        opacity: 1;
+
+        transform: translateY(0);
+    }
+}
+
+/* RESPONSIVO */
+
+@media(max-width:768px){
+
+    h1{
+        font-size: 32px;
+    }
+
+    p{
+        font-size: 16px;
+    }
+
+    form{
+        padding: 25px;
+    }
+
+    .btn-danger{
+        width: 100%;
+    }
+}
+
+
+/* =========================
+   TASK EDIT
+   ABYSS + FROST
+========================= */
+
+/* TÍTULO */
+
+h1{
+    color: #8ecae6;
+
+    font-size: 42px;
+
+    font-weight: 700;
+
+    margin-bottom: 30px;
+
+    letter-spacing: 1px;
+
+    text-shadow:
+        0 0 14px rgba(142,202,230,0.18);
+}
+
+/* FORM */
+
+.form{
+    background:
+        rgba(19,28,49,0.94);
+
+    border: 1px solid #24324d;
+
+    border-radius: 28px;
+
+    padding: 38px;
+
+    max-width: 760px;
+
+    box-shadow:
+        0 10px 35px rgba(0,0,0,0.4);
+
+    backdrop-filter: blur(10px);
+
+    animation: fadeUp 0.45s ease;
+}
+
+/* PARÁGRAFOS DO DJANGO */
+
+.form p{
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 10px;
+
+    margin-bottom: 24px;
+}
+
+/* LABELS */
+
+.form label{
+    color: #cbd5e1;
+
+    font-size: 15px;
+
+    font-weight: 600;
+
+    letter-spacing: 0.4px;
+}
+
+/* INPUTS */
+
+.form input,
+.form textarea,
+.form select{
+    background-color: #111827 !important;
+
+    border: 1px solid #24324d !important;
+
+    border-radius: 16px !important;
+
+    padding: 14px 18px !important;
+
+    color: #f1f5f9 !important;
+
+    font-size: 15px;
+
+    transition: 0.25s;
+}
+
+/* TEXTAREA */
+
+.form textarea{
+    min-height: 140px;
+
+    resize: vertical;
+}
+
+/* FOCUS */
+
+.form input:focus,
+.form textarea:focus,
+.form select:focus{
+    border-color: #8ecae6 !important;
+
+    box-shadow:
+        0 0 0 0.2rem rgba(142,202,230,0.18) !important;
+
+    transform: translateY(-1px);
+}
+
+/* PLACEHOLDER */
+
+.form input::placeholder,
+.form textarea::placeholder{
+    color: #64748b;
+}
+
+/* BOTÃO */
+
+.btn-primary{
+    background:
+        linear-gradient(
+            135deg,
+            #8ecae6,
+            #5dade2
+        ) !important;
+
+    border: none !important;
+
+    border-radius: 16px !important;
+
+    padding: 13px 24px !important;
+
+    color: #081018 !important;
+
+    font-weight: 700 !important;
+
+    letter-spacing: 0.5px;
+
+    transition: 0.25s;
+
+    box-shadow:
+        0 8px 22px rgba(142,202,230,0.25);
+}
+
+/* HOVER BOTÃO */
+
+.btn-primary:hover{
+    transform: translateY(-3px);
+
+    opacity: 0.95;
+
+    box-shadow:
+        0 12px 28px rgba(142,202,230,0.35);
+}
+
+/* LINK */
+
+a{
+    display: inline-block;
+
+    margin-top: 22px;
+
+    color: #8ecae6;
+
+    text-decoration: none;
+
+    font-weight: 600;
+
+    transition: 0.25s;
+}
+
+/* HOVER LINK */
+
+a:hover{
+    color: #d6f0ff;
+
+    transform: translateX(3px);
+}
+
+/* ANIMAÇÃO */
+
+@keyframes fadeUp{
+
+    from{
+        opacity: 0;
+
+        transform: translateY(20px);
+    }
+
+    to{
+        opacity: 1;
+
+        transform: translateY(0);
+    }
+}
+
+/* RESPONSIVO */
+
+@media(max-width:768px){
+
+    h1{
+        font-size: 32px;
+    }
+
+    .form{
+        padding: 26px;
+    }
+
+    .btn-primary{
+        width: 100%;
+    }
+}
+
+body {
+    background-color: #2E3440;
+    font-family: Arial, sans-serif;
+    color: #ECEFF4;
+}
+
+/* Card do login */
+.login-form {
+    width: 100%;
+    max-width: 400px;
+    margin: 60px auto;
+    padding: 30px;
+    background-color: #3B4252;
+    border-radius: 14px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Título */
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #88C0D0;
+    font-size: 34px;
+}
+
+/* Textos */
+p {
+    text-align: center;
+    color: #D8DEE9;
+    margin-bottom: 15px;
+}
+
+/* Labels */
+label {
+    color: #ECEFF4;
+    font-weight: bold;
+}
+
+/* Inputs */
+.login-form input[type="text"],
+.login-form input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    margin-top: 6px;
+    margin-bottom: 18px;
+    border: 1px solid #4C566A;
+    border-radius: 8px;
+    background-color: #2E3440;
+    color: #ECEFF4;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+/* Focus */
+.login-form input[type="text"]:focus,
+.login-form input[type="password"]:focus {
+    border-color: #88C0D0;
+    outline: none;
+    box-shadow: 0 0 8px rgba(136, 192, 208, 0.4);
+}
+
+/* Botão */
+.login-form input[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background-color: #5E81AC;
+    color: #ECEFF4;
+    border: none;
+    border-radius: 8px;
+    font-size: 17px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Hover */
+.login-form input[type="submit"]:hover {
+    background-color: #81A1C1;
+}
+
+/* Mensagens de erro */
+.errorlist {
+    list-style: none;
+    padding: 0;
+    color: #BF616A;
+    text-align: center;
+}
+
+/* ===== Página ===== */
+
+body {
+    background: linear-gradient(135deg, #2E3440, #3B4252);
+    font-family: "Inter", Arial, sans-serif;
+    color: #ECEFF4;
+    min-height: 100vh;
+}
+
+/* ===== Título ===== */
+
+h1 {
+    text-align: center;
+    font-size: 38px;
+    font-weight: 700;
+    color: #88C0D0;
+    margin-top: 50px;
+    margin-bottom: 35px;
+    letter-spacing: -1px;
+}
+
+/* ===== Formulário ===== */
+
+.form {
+    width: 100%;
+    max-width: 650px;
+    margin: 0 auto;
+    padding: 40px;
+    background: rgba(59, 66, 82, 0.95);
+    border: 1px solid #4C566A;
+    border-radius: 24px;
+    backdrop-filter: blur(12px);
+
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.35),
+        0 0 1px rgba(255, 255, 255, 0.05);
+
+    animation: fadeIn 0.4s ease;
+}
+
+/* ===== Campos do Django ===== */
+
+.form p {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 22px;
+}
+
+/* ===== Labels ===== */
+
+.form label {
+    font-size: 15px;
+    font-weight: 600;
+    color: #D8DEE9;
+}
+
+/* ===== Inputs ===== */
+
+.form input,
+.form textarea,
+.form select {
+    width: 100%;
+    padding: 14px 16px;
+    border-radius: 14px;
+    border: 1px solid #4C566A;
+    background-color: #2E3440;
+    color: #ECEFF4;
+    font-size: 15px;
+
+    transition:
+        border-color 0.25s ease,
+        box-shadow 0.25s ease,
+        transform 0.2s ease;
+}
+
+/* ===== Textarea ===== */
+
+.form textarea {
+    min-height: 140px;
+    resize: vertical;
+}
+
+/* ===== Focus ===== */
+
+.form input:focus,
+.form textarea:focus,
+.form select:focus {
+    outline: none;
+    border-color: #88C0D0;
+
+    box-shadow:
+        0 0 0 4px rgba(136, 192, 208, 0.15);
+
+    transform: translateY(-1px);
+}
+
+/* ===== Placeholder ===== */
+
+.form input::placeholder,
+.form textarea::placeholder {
+    color: #7B88A1;
+}
+
+/* ===== Botão ===== */
+
+.btn-primary {
+    width: 100%;
+    margin-top: 10px;
+    padding: 14px;
+
+    border: none;
+    border-radius: 14px;
+
+    background: linear-gradient(135deg, #5E81AC, #81A1C1);
+
+    color: #ECEFF4;
+    font-size: 16px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.25s ease;
+}
+
+/* ===== Hover botão ===== */
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 8px 18px rgba(94, 129, 172, 0.35);
+}
+
+/* ===== Link cancelar ===== */
+
+a {
+    display: block;
+
+    width: 100%;
+    max-width: 650px;
+
+    margin: 18px auto 0 auto;
+    padding: 14px;
+
+    text-align: center;
+    text-decoration: none;
+
+    border-radius: 14px;
+    border: 1px solid #4C566A;
+
+    background-color: rgba(59, 66, 82, 0.75);
+
+    color: #D8DEE9;
+    font-weight: 600;
+
+    transition:
+        background-color 0.25s ease,
+        border-color 0.25s ease,
+        transform 0.2s ease;
+}
+
+/* ===== Hover cancelar ===== */
+
+a:hover {
+    background-color: #434C5E;
+    border-color: #88C0D0;
+
+    transform: translateY(-2px);
+}
+
+/* ===== Erros ===== */
+
+.errorlist {
+    list-style: none;
+
+    padding: 10px 14px;
+    margin: 5px 0 0 0;
+
+    border-radius: 10px;
+
+    background-color: rgba(191, 97, 106, 0.12);
+    border: 1px solid #BF616A;
+
+    color: #BF616A;
+    font-size: 14px;
+}
+
+/* ===== Animação ===== */
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(12px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

@@ -1,3 +1,10 @@
+requirements.txt
+asgiref==3.11.1
+Django==6.0.4
+sqlparse==0.5.5
+tzdata==2026.2
+
+
 Django Tasks
 
 Sistema de Gerenciamento de Tarefas
